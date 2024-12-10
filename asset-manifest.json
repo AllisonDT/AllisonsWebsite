@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/AllisonsWebsite/static/css/main.33553328.css",
+    "main.js": "/AllisonsWebsite/static/js/main.da2e75f6.js",
+    "index.html": "/AllisonsWebsite/index.html",
+    "main.33553328.css.map": "/AllisonsWebsite/static/css/main.33553328.css.map",
+    "main.da2e75f6.js.map": "/AllisonsWebsite/static/js/main.da2e75f6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.33553328.css",
+    "static/js/main.da2e75f6.js"
+  ]
+}
