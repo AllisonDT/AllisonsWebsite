@@ -1,3 +1,156 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0.5);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s ease-in-out;
+}
+
+.animate-slideIn {
+  animation: slideIn 1s ease-in-out;
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.animate-zoomIn {
+  animation: zoomIn 0.8s ease-in-out;
+}
+
+.animate-bounce {
+  animation: bounce 2s infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #ffe4e6; /* Soft pink */
+  font-family: 'Poppins', sans-serif;
+  color: #5b2245; /* Deep pinkish color for text */
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ffd6e0; /* Lighter pink on hover */
+}
+
+aside {
+  background: linear-gradient(180deg, #ff80ab, #ff4081);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+aside h1 {
+  font-family: 'Pacifico', cursive; /* Fun, bubbly font for the header */
+}
+
+aside nav a {
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+aside nav a:hover {
+  transform: scale(1.05);
+}
+
+aside nav a.active {
+  background-color: #ff567d; /* Highlight active links */
+  color: #ffffff;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+footer {
+  background-color: #ff80ab;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: #e73370;
+  transform: scale(1.1);
+}
+
+button:active {
+  transform: scale(0.95);
+}
